@@ -22,7 +22,7 @@ image:
 
 ## 一、安装环境
 
--   Ubuntu 系统版本：20.04 LTS，链接: _<https://pan.baidu.com/s/1ojBoCBSHbMVZHhD8HOHYyA>_ 提取码: 76wv（不建议下载，以为反而慢）
+-   Ubuntu 系统版本：20.04 LTS，链接: _<https://pan.baidu.com/s/1ojBoCBSHbMVZHhD8HOHYyA>_ 提取码: 76wv（不建议下载，因为反而慢）
 -   OpenCV 版本：4.5.3，链接: _<https://pan.baidu.com/s/1foen04ULGOwGpwLJUwvS2A>_ 提取码: vwmq
 -   OpenCV_contrib版本：需与 OpenCV 一致，链接: _<https://pan.baidu.com/s/1wI7IgSBt3sSBjE374Gnksg>_ 提取码: 7mef
 
@@ -83,7 +83,7 @@ sudo apt update
 sudo apt install libjasper1 libjasper-dev
 ```
 
-如果想要升级 gcc/g++ 版本，请看[这篇文章](https://harry-hhj.github.io/posts/Building-your-Blog/)中的相关部分。如果想要安装最新版的 cmake ，可以参考[这篇教程](https://apt.kitware.com)。
+
 
 <br/>
 
@@ -237,7 +237,7 @@ cmake-gui
 
 这里说明一下，CMAKE_INSTALL_PREFIX 为安装路径，系统默认为 `/usr/local` ，如若对 Ubuntu 不熟悉，则不要更改，默认就好。
 
-确认无误后，点击 `Configure` ；先排除三个常见的问题：
+确认无误后，点击 `Configure` ；先排除四个常见的问题：
 
 1.   `ade*` 无法下载：手动下载（链接: _<https://pan.baidu.com/s/1oVUeBL6cbxeczRAd22-CHw>_ 提取码: j2v7），存放在 Downloads 文件夹里，打开 `<opencv>/modules/gapi/cmake/DownloadADE.cmake` ，把第 10 行更换成自己下载的文件目录路径，例如 `/home/<username>/Downloads/`  ，其中 `<username>` 代表你的用户名。重新 Configure 。
 
